@@ -17,7 +17,10 @@ body{font-family: "microsoft yahei"; font-size:14px; background:#efefef; color:#
 .head-nav li a.active{color:#e1b535;}
 .banner{width:100%; height:449px;}
 .foot{width:100%; height:145px; background:#f4dfc2; border-top:2px solid #c49520; margin-top:92px;}
-
+.foot-nav{padding-top:40px;}
+.foot-nav span{margin:0 5px;}
+.foot-info{margin-top:33px; background:url(../images/foot_logo.png) right center no-repeat;}
+.foot-info p{text-align: right; line-height: 30px; margin-right:100px; padding-right:40px; border-right:1px solid #ada294;}
 /**
  * 首页样式开始
  */
