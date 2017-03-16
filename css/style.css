@@ -1,7 +1,7 @@
 /**
  * 通用样式开始
  */
-body{font-family: "microsoft yahei"; font-size:14px; background:#efefef; color:#666;}
+body{font-family: "microsoft yahei"; font-size:14px; background:#efefef; color:#666; min-width: 1100px;}
 .fl{float:left;}
 .fr{float: right;}
 .clearfix:after{content:" "; height:0; display: block; clear: both; visibility: hidden;}
@@ -9,24 +9,26 @@ body{font-family: "microsoft yahei"; font-size:14px; background:#efefef; color:#
 .mt13{margin-top:13px;}
 
 .layout{width:1100px; margin:0 auto;}
-.head{width:100%; height:98px; background:#01003d; position: absolute; top:37px; z-index: 100;}
+.head{width:100%; min-width: 1100px; height:98px; background:#01003d; position: absolute; top:37px; z-index: 100;}
 .head-logo{margin-top:-20px;}
 .head-nav li{float:left; margin:0 20px; line-height: 98px; display: inline;}
 .head-nav li a{color:#fff; font-size:16px;}
 .head-nav li a:hover{color:#e1b535;}
 .head-nav li a.active{color:#e1b535;}
 .banner{width:100%; height:449px;}
-.foot{width:100%; height:145px; background:#f4dfc2; border-top:2px solid #c49520; margin-top:92px;}
+.foot{width:100%; min-width: 1100px; height:145px; background:#f4dfc2; border-top:2px solid #c49520; margin-top:92px;}
 .foot-nav{padding-top:40px;}
 .foot-nav span{margin:0 5px;}
 .foot-info{margin-top:33px; background:url(../images/foot_logo.png) right center no-repeat;}
 .foot-info p{text-align: right; line-height: 30px; margin-right:100px; padding-right:40px; border-right:1px solid #ada294;}
+
+
 /**
  * 首页样式开始
  */
 .m-index-title{color:#c49520; font-size:20px; padding-left:37px; background:url(../images/index_title_icon.png) left center no-repeat;}
 .index-activities,.index-member-star,.index-cooperation,.index-new-sihui{margin-top:35px;}
-
+.index-activities,.index-cooperation,.index-new-sihui{overflow: hidden;}
 .banner .swiper-container{height:100%;}
 .index-news{width:auto; height:251px; background:#fff; margin-top:-50px; position: relative; z-index: 2; padding:20px 23px;}
 .index-news-title{color:#c49520; font-size:20px; margin-top:5px;}
@@ -79,3 +81,17 @@ body{font-family: "microsoft yahei"; font-size:14px; background:#efefef; color:#
 .index-new-sihui-bd .item:hover img,.index-new-sihui-bd .big-item:hover img{transform: scale(1.2);}
 .index-new-sihui-bd .item.first-item span{color:#fff;}
 .index-new-sihui-bd .item span{color:#000; position: absolute; text-align: center; display: block; width: 100%; line-height: 113px; font-size:24px; z-index: 2;}
+
+
+/**
+ * 内页通用样式
+ */
+.page-warp{width:auto; background:#fff; margin-top:-50px; position:relative; z-index: 2;}
+.m-page-title{color:#c49520; font-size:20px; border-bottom:2px solid #c49520; margin-left:48px; padding:28px 0 10px 0;}
+.m-page-nav{width:135px; margin-left:48px; padding-top: 20px; }
+.m-page-nav li{line-height: 36px;}
+.m-page-nav li a{position: relative; padding-left: 20px;}
+.m-page-nav li a:hover{color:#01003d;}
+.m-page-nav li a.active{color:#01003d;}
+.m-page-nav li a.active:before{width:0; height:0; content: " "; display: block; border: 4px solid transparent; border-left: 5px solid #01003d; position: absolute; top: 6px;}
+.m-page-content1{width:832px; min-height:500px; border-left:1px solid #eee; padding:40px;}
